@@ -1,0 +1,69 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #839290;
+}
+
+/* Media query para ocultar el logo en dispositivos móviles */
+@media screen and (max-width: 480px) {
+  .navbar-logo {
+    display: none;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    justify-content: center; /* Centra los elementos en la vista móvil */
+  }
+
+  .nav-item {
+    margin: 0 5px; /* Ajustamos los márgenes a 0 para la vista móvil */
+    padding: 0 5px; /* Ajustamos el relleno a 0 para la vista móvil */
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+}
